@@ -1,0 +1,23 @@
+/* styles.css */
+*{
+    color:purple;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div{
+    color: white;
+}
+.alert-text{
+    color:red;
+}
+.read,
+.unread{
+    color: white;
+    background-color: black;
+}
+.subsection.header{
+    color:red;
+}
+.ancestor .contents{
+    color:green;
+}
