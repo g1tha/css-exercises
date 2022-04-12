@@ -4,15 +4,38 @@ html, body {
   height: 100%;
 }
 
+body, .modal, .left, .right, .top, .buttons, .icon, .close-button {
+  display: flex;
+}
+
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
   background: #aaa;
   color: #333;
   /* I'll give you this one for free lol */
-  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.right {
+  flex-direction: column;
+}
+
+.top {
+  justify-content: space-between;
+}
+
+.header {
+  font-size: larger;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.buttons {
+  gap: 4px;
+  margin-top: 16px;
+  margin-bottom: 8px;
 }
 
 .modal {
@@ -20,6 +43,8 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 8px;
+  gap: 8px;
 }
 
 .icon {
@@ -30,9 +55,10 @@ body {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  display: flex;
   align-items: center;
   justify-content: center;
+  margin: 8px;
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -43,9 +69,13 @@ body {
   font-size: 16px;
   height: 24px;
   width: 24px;
-  display: flex;
+  margin: 8px;
   align-items: center;
   justify-content: center;
+}
+
+.text {
+  flex-wrap: wrap;
 }
 
 button {
